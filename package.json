@@ -1,31 +1,29 @@
 {
-   "scripts": {
-      "prepublishOnly": "NODE_ENV=production scrypted-webpack",
-      "prescrypted-vscode-launch": "scrypted-webpack",
-      "scrypted-vscode-launch": "scrypted-deploy-debug",
-      "scrypted-deploy-debug": "scrypted-deploy-debug",
-      "scrypted-debug": "scrypted-debug",
-      "scrypted-deploy": "scrypted-deploy",
-      "scrypted-webpack": "scrypted-webpack"
-   },
-   "keywords": [
-      "scrypted",
-      "plugin"
-   ],
-   "scrypted": {
-      "name": "JavaScript Light",
-      "type": "Device",
-      "interfaces": [
-         "OnOff"
-      ],
-      "events": [
-         "OnOff"
-      ]
-   },
-   "devDependencies": {
-      "@scrypted/sdk": "0.0.29"
-   },
-   "dependencies": {
-      "axios": "^0.19.0"
-   }
+  "scripts": {
+    "prepublishOnly": "NODE_ENV=production scrypted-webpack",
+    "prescrypted-vscode-launch": "scrypted-webpack",
+    "scrypted-vscode-launch": "scrypted-deploy-debug",
+    "scrypted-deploy-debug": "scrypted-deploy-debug",
+    "scrypted-debug": "scrypted-debug",
+    "scrypted-deploy": "scrypted-deploy",
+    "scrypted-webpack": "scrypted-webpack"
+  },
+  "keywords": [
+    "scrypted",
+    "plugin"
+  ],
+  "scrypted": {
+    "name": "GenericButton",
+    "type": "Device",
+    "interfaces": [
+      "OnOff",
+      "HttpRequestHandler"
+    ],
+    "events": [
+      "OnOff"
+    ]
+  },
+  "devDependencies": {
+    "@scrypted/sdk": "0.0.29"
+  }
 }
